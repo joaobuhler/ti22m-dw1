@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap');
+.cabecalho{text-align: center; font-size: 0.8em; font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto; font-style: normal; font-weight: normal; }
+.titulo{font-family: "Anton", sans-serif;
+font-weight: 400;
+font-style: normal; text-align: center; text-transform: uppercase}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap');
+.versiculo{font-family: "Shadows Into Light", cursive;
+font-weight: 400;
+font-style: normal; font-size: 1.3em; text-align: center;}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.texto{font-family: "Nunito", sans-serif;
+font-optical-sizing: auto; font-style: normal; font-weight: normal; font-size: 1.1em; line-height: 1.5; text-align: justify}
+
+.importante{font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto; font-style: normal; font-weight: bold; font-size: 1.5em; line-height: 1.5; text-align: center; color: green;}
+
+.desafio{background-color: gray; text-align: center; font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto; font-style: normal; font-weight: normal; font-size: 1.1em; line-height: 1.5;}
