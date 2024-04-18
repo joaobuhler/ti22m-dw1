@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Comandos Code, Samp, Pre e Kbd</h1>
+
+<pre>
+    <code>
+            &lt;label for="inputA"&gtValor A&lt;/label&gt;
+            &lt;input type="number" name="inputA" id="inputA"&gt
+            &lt;br&gt
+            &lt;label for="inputB"&gtValor B&lt;/label&gt
+            &lt;input type="number" name="inputB" id="inputB"&gt
+            &lt;br&gt
+            &lt;label for="inputC"&gtValor C&lt;/label&gt
+            &lt;input type="number" name="inputC" id="inputC"&gt
+            &lt;br&gt
+            &lt;input type="button" value="calcular" onclick="calcular()"&gt
+            &lt;br&gt
+            &lt;label for="x1"&gtx1&lt;/label&gt
+            &lt;span id="x1"&gt&lt;/span&gt
+            &lt;br&gt
+            &lt;label for="x2"&gtx2&lt;/label&gt
+            &lt;span id="x2"&gt&lt;/span&gt
+            &lt;br&gt
+            &lt;label for="resp"&gtresp&lt;/label&gt
+            &lt;span id="resp"&gt&lt;/span&gt
+    
+    
+                function calcular(){
+    
+    
+                    a = parseFloat(document.getElementById("inputA").value);
+                    b = parseFloat(document.getElementById("inputB").value);
+                    c = parseFloat(document.getElementById("inputC").value);
+    
+                    delta = b**2-4*a*c;
+                if (delta &gt 0){
+                    resp = "impossivel de calcular" ;
+                }
+                else {
+                x1 = (-b + Math.sqrt(delta))/(2*a);
+    
+                x2 = (-b - Math.sqrt(delta))/(2*a);
+    
+                    resp = "Valor Calculado" ;
+    
+                }
+    
+                    document.getElementById("x1").textContent = x1;
+                    document.getElementById("x1").textContent = x2;
+                    document.getElementById("resp") = respt;
+                }
+    
+    
+    </code>
+</pre>
+
+<p>Ao executar o programa acima, ele mostrará uma saída contendo os valores de x1 x2 e a resposta, por exemplo: caso os valores de A,B e C sejam respectivamente <strong>1, 2 e -15</strong> a saída será: <samp>  X1:<strong>3</strong>  X2:<strong>-5</strong>  Resp:<strong>{3,-5}</strong> </samp></p>
+
+<br>
+<br>
+
+<p>o elemento CODE serve para demonstrar um fragmento de código presente no texto</p>
+<p>o elemento PRE serve para definir os espaços desse trecho de código</p>
+<p>o elemento SAMP serve para mostrar a saída desse código em um fragmento de texto</p>
+<p>o elemento KBD serve para mostrar um comando no teclado</p>
+
+<br>
+<br>
+
+<p>Meus comandos favoritos do VScode são: <p><Kbd>Ctrl + Shift + P</Kbd> <br>Que mostra uma lista de comandos do programa </p> <p><kbd>Alt + Z</kbd><br>Que realiza a quebra de texto</p> <p><kbd>Ctrl + Z</kbd> <br>Que retorna as ações feitas pelo usuário, corrijindo possíveis erros</p> <p><kbd>Ctrl + Space</kbd><br>Que mostra as "dicas" do VScode</p></p>
+
+
+</body>
+</html>
