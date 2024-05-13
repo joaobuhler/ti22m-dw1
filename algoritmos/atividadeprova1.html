@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<label for="nomepess">Nome Pessoa</label>
+<input type="text" name="nomepess" id="nomepess">
+<br>
+<label for="datanasc">Data de Nascimento</label>
+<input type="number" name="datanasc" id="datanasc">
+<br>
+<input type="button" value="descobrirgeraçao" onclick="calcgeraçao()">
+<br>
+<label for="resposta">Geração: </label>
+<span id="resposta"></span>
+<script>
+function calcgeraçao(){
+let datanasc = parseInt(document.getElementById("datanasc").value);
+let nomepess = document.getElementById("nomepess").value;
+let resposta = document.getElementById("resposta");
+let Geração;
+
+if (datanasc < 1946 ){
+    Geração = "Geração silenciosa";
+}
+
+else if (datanasc <= 1964){
+    Geração = "Baby Boomers";
+}
+
+else if (datanasc <= 1980){
+    Geração = "Geração X";
+}
+
+else if (datanasc <= 1999){
+    Geração = "Millennials";
+}
+
+else{
+    Geração = "Geraçao Z";
+}
+
+document.getElementById("resposta").textContent = Geração;
+
+
+}
+</script>
