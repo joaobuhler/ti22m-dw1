@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{ padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    div.container{ background-color:rgb(212, 91, 91);
+    width: 100vw;
+    height: 100vh;
+    }
+    div#cabeçalho{ background-color: brown;
+    width: 100%;
+    height: 100vh;
+    }
+    div#secao1{ background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+    }
+    div#secao2{ background-color: violet;
+    width: 100vw;
+    height: 100vh;
+    }
+
+    ul.menu{
+    background-color: green;
+
+    }
+
+    ul.menu li{
+    width: 120px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+    border: 4px solid violet;
+    list-style: none;
+    display: inline-block;
+    }
+
+    ul.menu li:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+<ul class="menu">
+    <li><a href="#cabecalho">cabeçalho</a></li>
+    <li><a href="#secao1">Seção 1</a></li>
+    <li><a href="#secao2">Seção 2</a></li>
+</ul>
+
+<div id="cabeçalho">
+    <h1>Cabeçalho</h1>
+</div>
+
+<div id="secao1">
+    <h1>Seção 1</h1>
+</div>
+
+ <div id="secao2">
+    <h1>Seção 2</h1>
+</div>
+
+    
+</body>
+</html>
