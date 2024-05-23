@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Major+Mono+Display&family=Poetsen+One&family=Sedan+SC&display=swap');
+
+
+
+
+    :root{
+        --cor-fundo: gray;
+        --cor-primaria: white;
+        --cor-secundaria: black;
+        --fonte-primaria: "Poetsen One", sans-serif;
+        --fonte-secundaria: "Indie Flower", cursive;
+        --altura-cabecalho: 50px
+    }
+
+
+
+    *{padding: 0;
+      margin: 0;
+      box-sizing: border-box;  
+    
+    }
+
+    .cabecalho{
+        background-color: var(--cor-primaria);
+        height: 100px;
+        border: 1px solid black;
+        font-family: var(--fonte-primaria);
+        text-align: center;
+        overflow-y: scroll;
+
+    }
+
+    .card{
+    border: 1px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--cor-secundaria);
+    }
+
+    .card h1{
+        margin-bottom: 10px;
+        color: var(--cor-primaria);
+        font-family: var(--fonte-secundaria);
+
+    }
+
+    .card ul{
+        font-family: var(--fonte-primaria);
+        margin-left: 15px;
+        color: var(--cor-primaria);
+        
+    }
+
+    body{
+     background-color: var(--cor-fundo);
+    }
+
+    #h1{background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    }
+@keyframes animated{
+    to {background-position-x: 161px;}
+}
+    .cabecalho h1{background: linear-gradient(to left, red, black, white);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    
+    }
+@keyframes animated{
+    to {background-position-x: 161px;}
+    
+}
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Trikas</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti alias, dignissimos amet blanditiis eaque ex aspernatur earum nesciunt tempora itaque consequuntur atque illo fugiat praesentium ipsum quasi magni facere perferendis!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam placeat nam voluptatum aspernatur assumenda cum beatae distinctio deserunt expedita maxime ratione illo sunt quibusdam, maiores, ipsum nostrum exercitationem, delectus inventore?</p>
+        </div>
+        <div class="card">
+        
+        <h1 id="h1">Lista de Tarefas</h1>
+        <ul>
+        <li>Tarefa 1</li>
+        <li>Tarefa 2</li>
+        <li>Tarefa 3</li>
+        
+        </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
