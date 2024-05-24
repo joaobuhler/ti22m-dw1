@@ -23,12 +23,36 @@
         --altura-cabecalho: 50px
     }
 
+    .container{
+        background-color: gray;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .menu{
+        height: 80px;
+    background-color: black;
+    }
+
+
+    .menu ul{
+        display: flex;
+
+    }
+
+    .menu li{
+        list-style: none;
+    }
 
 
     *{padding: 0;
       margin: 0;
       box-sizing: border-box;  
     
+    }
+
+    .menu a{
+        border: 1px solid red;
     }
 
     .cabecalho{
@@ -97,10 +121,22 @@
 <body>
 
     <div class="container">
+        <div class="menu">
+            <ul>
+            <li><a href="">Opção 1</a></li>
+            <li><a href="">Opção 2</a></li>
+            <li><a href="">Opção 3</a></li>
+            </ul>
+        </div>
+
+
+
         <div class="cabecalho">
             <h1>Trikas</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti alias, dignissimos amet blanditiis eaque ex aspernatur earum nesciunt tempora itaque consequuntur atque illo fugiat praesentium ipsum quasi magni facere perferendis!</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam placeat nam voluptatum aspernatur assumenda cum beatae distinctio deserunt expedita maxime ratione illo sunt quibusdam, maiores, ipsum nostrum exercitationem, delectus inventore?</p>
         </div>
+
+
         <div class="card">
         
         <h1 id="h1">Lista de Tarefas</h1>
