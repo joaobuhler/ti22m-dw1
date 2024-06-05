@@ -11,8 +11,9 @@
              font-family: Arial, sans-serif;
              text-align: center;
              margin-top: 50px;
+             background-color: blue;
         }
-        #score {
+        .score {
             font-size: 2em;
             margin: 20px;
         }
@@ -85,16 +86,14 @@ button:hover {
         <button id="proxp" onclick="nextQuestion()">Próxima Pergunta</button>
     </div>
     <div>
-        <div id="score">Pontuação: 0</div>
+        <div class="score">Pontuação: <span id="score">0</span></div>
        
     </div>
     <script>const questions = [
         { question: "f(x) = 2x + 1", answer: "crescente" },
         { question: "f(x) = x^5 - x", answer: "ímpar" },
-        { question: "f(x) = cos(x)", answer: "par" },
         { question: "f(x) = (2x + 1)²", answer: "composta" },
         { question: "f(x) = (x + 2)^2", answer: "composta" },
-        { question: "f(x) = sin(x)", answer: "ímpar" },
         { question: "f(x) = x³", answer: "ímpar" },
         { question: "f(x) = (x^2 - 1)/(x + 1)", answer: "composta" },
         { question: "f(x) = x²", answer: "par" },
@@ -126,6 +125,7 @@ button:hover {
         } else {
             document.getElementById('tela').textContent = `Errado! A resposta correta é ${correctAnswer}.`;
             document.getElementById('tela').style.color = 'red';
+            perdeu()
         }
 
         document.getElementById('proxp').style.display = 'block';
@@ -146,7 +146,10 @@ button:hover {
             score++;
             document.getElementById('score').innerText = Pontuação = `${score}`;
         }
-        
+        function perdeu() {
+            score-=1;
+            document.getElementById('score').innerText = Pontuação = `${score}`;
+        }
         function resetScore() {
             score = 0;
             document.getElementById('score').innerText = Pontuação = `${score}`;
