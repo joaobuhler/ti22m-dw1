@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br   ">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,33 +13,40 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             background-color: #3B5BDB;
             overflow-y: hidden;
         }
 
-        .container{
+        .container {
             display: flex;
-            margin-left: 398px;
-            gap: 130px;
+
+            justify-content: space-around;
             text-align: center;
             align-items: center;
             height: 50vh;
             width: 100vw;
             flex-wrap: wrap;
-    
+            
         }
 
-        .card{
+        .card {
             background-color: white;
             height: 45vh;
-            width: 15vw;
+            width: 20vw;
             border-radius: 5%;
             
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
             
+            
+
+
         }
-        
-        h1{
+
+        h1 {
             display: flex;
             justify-content: center;
             margin-top: 150px;
@@ -47,29 +55,50 @@
 
         }
 
-        li{
+        li {
             list-style: none;
             line-height: normal;
+            flex-flow: column;
+
+        }
+
+        .plano-nome {
+            font-size: x-large;
+            font-weight: bold;
+
+        }
+
+        .plano-descricao{
+            opacity: 5;
+        }
+
+        .plano-valor{
+            color: #3B5BDB;
+            font-size: xx-large;
+            font-weight: bold;
+
+        }
+
+        .plano-comprar{
+            background-color: #3B5BDB;
+            display: flex;
+            justify-content: center;
             
         }
 
-        
-
-        
-        
-        
     </style>
 
 </head>
+
 <body>
 
     <h1>Planos</h1>
 
     <div class="container">
 
-        
 
-        <div class="card">            
+
+        <div class="card">
             <div class="plano-nome">Starter</div>
             <div class="plano-valor">R$ 50,00</div>
             <div class="plano-descricao">
@@ -84,7 +113,7 @@
             </div>
         </div>
         <div class="card">
-            
+
             <div class="plano-nome">Personal</div>
             <div class="plano-valor">R$ 100,00</div>
             <div class="plano-descricao">
@@ -111,9 +140,10 @@
             <div class="plano-comprar">
                 <span>Comprar</span>
             </div>
-            
+
         </div>
     </div>
-    
+
 </body>
+
 </html>
