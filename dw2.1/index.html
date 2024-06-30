@@ -13,42 +13,93 @@
             box-sizing: border-box;
         }
 
-        body {
+        body{
+            
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100vw;
             height: 100vh;
+            
         }
 
-        li {
+        .list{
+           
+            flex-shrink: 0;
+            border: 15px solid #5B9EED;
+            width: 500px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
 
+        }
+
+        li{
+                flex-grow: 1;
+                display: flex;
+                justify-content: start;
+                width: 420px;
+                color: black;
+                font-size: x-large;
+                align-items: top;
+                margin-top: 10px;
+                
+        }
         
-        }
-
         ul {
             display: flex;
             list-style: none;
-            align-items;
-            justify-content: space-around;
-            display: flex;
             height: 60vh;
             width: 24vw;
-            flex-wrap: wrap;
             flex-direction: column;
             align-items: center;
-            background-color: blue;
-            j
+            
+        }
+    
 
+        .list-item{
+            list-style: none;
+            display: flex;
+            background-color: white;
+            border-bottom: 3px solid gray;
+            flex-direction: row-reverse;
+           
         }
 
-        /* .list-item__image{
-            flex-shrink: 0;
+        .list-item img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            
+           
+        }
+      
+        p{
+            
+            font-size: medium;
+            display: flex;
+           margin-left: 10px;
+           
+            color: rgb(63, 59, 59);
         }
 
-        .list-item__content{
-            flex-grow: 1;
-        } */
+        .espacamento{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: start;
+            margin-left: 10px;
+            margin-top: 20px;
+            
+        }
+        
+       .fonte{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: black;
+       }
+
+
+    
     </style>
 
 </head>
@@ -56,10 +107,39 @@
 <body>
     <div class="container">
         <ul class="list">
-            <li class="list-item">Karl Simpson</li>
-            <li class="list-item">Pat Hayes</li>
-            <li class="list-item">Wyatt Sutton</li>
-            <li class="list-item">Fred Fleming</li>
+            <li 
+            class="list-item">
+            <div class="espacamento">
+                <p class="fonte">Karl Simpson </p>
+                <p>8506 White Oak</p>
+            </div>
+                <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="">
+                
+            </li>
+            
+            <li class="list-item">
+                <div class="espacamento">
+                    <p class="fonte">Pat Hayes</p>
+                    <p>6154 Locust Rd</p>
+                </div>
+                <img src="https://randomuser.me/api/portraits/men/59.jpg" alt="">
+            </li>
+            
+            <li class="list-item">
+                <div class="espacamento">
+                    <p class="fonte">Wyatt Sutton</p>
+                    <p>653 Preston Rd</p>
+                </div>
+                <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="">
+            </li>
+            
+            <li class="list-item">
+                <div class="espacamento">
+                    <p class="fonte">Fred Fleming</p>
+                    <p>1712 Valley View Ln</p>
+                </div>
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+            </li>
         </ul>
     </div>
 
