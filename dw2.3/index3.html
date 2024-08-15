@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="nome">Insira seu nome</label>
+<input type="text" name="nome "id="nome">
+<br>
+<br>
+<input type="button" value="printar nome" onclick="printar()">
+<br>
+<br>
+<label for="resposta">nome: </label>
+<div id="resposta"></div>
+<br>
+<br>
+<script>
+function printar(){
+let n = document.getElementById("nome").value;
+document.getElementById("resposta").textContent = n;
+}
+
+</script>
+
+    
+</body>
+</html>
