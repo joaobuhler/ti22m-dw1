@@ -6,58 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Multas</title>
 </head>
-<style>
-    body {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .esquerda {
-        background-color: rgb(221, 221, 221);
-        height: 30vh;
-        width: 30vw;
-        padding-left: 20px;
-        padding-top: 30px;
-        font-size: 16px;
-        border: 1px solid black;
-
-    }
-
-    .direita {
-        background-color: rgb(221, 221, 221);
-        height: 30vh;
-        width: 30vw;
-        padding-left: 20px;
-        padding-top: 30px;
-        font-size: 16px;
-        border: 1px solid black;
-    }
-
-    .container {
-        display: flex;
-        justify-content: start;
-        gap: 40px;
-        margin-left: 20px;
-    }
-    input[type="number"]{
-        background-color: rgb(250, 235, 215);
-        height: 5vh;
-
-    }
-    input[type="button"]{
-        background-color: black;
-        color: white;
-        width: 10vw;
-        height: 4vh;
-        border-radius: 8px;
-    }
-</style>
+<link rel="stylesheet" href="./multa.css">
 
 <body>
     <h1>Sistema de Multas</h1>
@@ -86,40 +35,11 @@
             <br>
             <p><strong>R$ 880,41 -</strong> Acima de 50% do limite permitido</p>
         </div>
-        <div id="resposta"></div>
     </div>
-
-    <script>
-        function Calcular() {
-            let VelocidadeVia = Number(document.getElementById("VelocidadeMaxima").value);
-            let VelocidadeVeiculo = Number(document.getElementById("VelocidadeVeiculo").value);
-            let saida = CalcularMulta(VelocidadeVeiculo, VelocidadeVia)
-            document.getElementById("resposta").innerText = "Você excedeu" +()+ "a velocidade máxima. " + "Sua Multa é de " + saida;
-        }
-
-        function CalcularMulta(VelocidadeVeiculo, VelocidadeVia) {
-            let valor = "";
-
-            if (VelocidadeVeiculo <= VelocidadeVia){
-                valor = "Não tem Multa"
-            }
-
-            else if ((VelocidadeVeiculo - VelocidadeVia) /100 < 0.2 ){
-                valor = " R$ 130,16";
-            }
-
-            else if ((VelocidadeVeiculo - VelocidadeVia) /100 >= 0.2  && (VelocidadeVeiculo - VelocidadeVia) /100 <= 0.5) {
-                valor = "R$ 195,23"
-            }
-
-            else if ((VelocidadeVeiculo - VelocidadeVia) /100 > 0.5 ){
-                valor = "R$ 880,41";
-            }
-
-
-            return valor;
-        }
-    </script>
+    <div id="resposta"></div>
+    
+    <script src="multa.js"></script>
+    
 </body>
 
 </html>
