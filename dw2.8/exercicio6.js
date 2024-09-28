@@ -1,5 +1,5 @@
 function bissexto(ano){
-    let aux = validar(ano);
+    let aux = validar(ano)
 
     if (aux) {
         return 'O ano é bissexto'
@@ -9,11 +9,11 @@ function bissexto(ano){
         }
 }
   function validar(ano) {
-             let validar = false;
+             let validar = false
              if (ano%4==0) {
-         validar = true;
+         validar = true
           }
-              return validar;
+              return validar
             
 }
 
