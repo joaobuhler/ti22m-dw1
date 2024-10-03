@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="num1">Insira um número</label>
+    <input type="number" name="num1" id="num1">
+    <br>
+    <br>
+    <label for="num2">Insira um número</label>
+    <input type="number" name="num2" id="num2">
+    <br>
+    <br>
+    <label for="num2">Insira um número</label>
+    <input type="number" name="num2" id="num2">
+    <br>
+    <br>
+    <input type="button" value="Calcular o Menor" onclick="Calcular()">
+    <br>
+    <br>
+    <div id="saida">Saída: </div>
+
+    <script>
+        function Calcular() {
+
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            let num3 = document.getElementById("num3").value
+            let resp = CalcularMenor(num1, num2, num3)
+            let saida = document.getElementById("resp").value
+        }
+
+        function CalcularMenor(num1, num2, num3) {
+            let resultado = []
+
+            if (num1 < num2 && num1 < num3) {
+                resultado = num1
+            }
+
+            else if (num2 < num1 && num2 < num3) {
+                resultado = num2
+            }
+
+            else if (num3 < num1 && num3 < num1) {
+                resultado = num3
+            }
+
+            return resultado
+        }
+
+    </script>
+
+</body>
+
+</html>
